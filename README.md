@@ -1,9 +1,49 @@
-# Crud-JPA
+<h1>Crud-JPA</h1>
 
-Para executar esse projeto, clone o repositorio, modifique o nome do arquivo "persistenceModel.xml" em -> /src/main/java/META-INF/persistenceModel.xml <- para "persistence.xml"
+> Status: Finished ✔️
 
-Edite os campos -> name="javax.persistence.jdbc.user" value=" " name="javax.persistence.jdbc.password" value=" " <- insirindo o usuario e senha do banco de dados MYSQL do seu sistema
+### Contents
+  
+* [What is it?](#what-is-it)
+* [Requirements](#requirements)
+* [Technologies Used](#technologies)
+* [Installation](#installation)
+* [Run Application](#run-application)
 
-Crie um novo SCHEMA no banco de dados com o nome "JPACrud"
+## <a name="what-is-it"></a>What is it?
 
-Importe o projeto MAVEN (File -> Import -> Maven -> Existing Maven Projects) na IDE para que as dependências sejam baixadas.
+A back-end project of a CRUD using Java and JPA.
+
+## <a name="requirements"></a>Requirements
+
+- Java 8+
+- MySQL 5+
+
+## <a name="technologies"></a>Technologies Used
+
+- Java
+- MySQL
+- JPA
+- Hibernate
+
+## <a name="installation"></a>Installation
+
+- Clone the repository for your device
+- Import it as a Maven Project in your IDE...
+- Create a new SCHEMA in the database with the name JPACrud
+- Under /src/main/java/META-INF/persistenceModel.xml modify the file name persistenceModel.xml to persistence.xml
+- Edit the VALUE of USER and PASSWORD of your MySQL database
+
+### persistence.xml
+```xml
+<property name="javax.persistence.jdbc.user" value=" " />
+<property name="javax.persistence.jdbc.password" value=" "/>
+```
+## <a name="run-application"></a>Run Application
+
+After meeting the requirements and installation, run the main methods as a java project in the controller.basico
+
+* To do a GET findById, run the class ObterUsuario.java
+* To do a GET findAll, run the class ObterUsuarios.java
+* To do a Post addUser, run the class NovoUsuario.java
+* To do a Delete delUser, run the class RemoverUsuario.java
